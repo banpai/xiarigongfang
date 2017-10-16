@@ -1,0 +1,81 @@
+@import '../../config.less';
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-cell__bd{
+    text-align:left;
+}
+.weui-tab__content{
+    padding-top: 0;
+}
+
+.weui-navbar {
+    background: #fff;
+}
+.weui-cells{
+    &::before{
+        border: 0;
+    }
+    position: relative;
+    .weui-cell__hd{
+        color: #FF7C56;
+        margin-right:40px;
+        margin-left:25px;
+    }
+    .weui-cell__ft{
+        text-align:right;
+        color:#999;
+        margin-right:30rpx;
+        margin-top:-23px;
+        position:absolute;
+        right:0;
+        top:34px;        
+    }
+}
+
+.wdjf{
+    margin-bottom: 30rpx;
+    background: #fff;
+    margin-top: 30rpx;
+    .jfxs{
+        .jsss{
+            float: left;
+            margin-left: 30rpx;
+            margin-top: @mainmargin;
+            color: @graycolor;
+            font-size: 12px;
+        }
+        .ckhyqy{
+            float: right;
+            text-align: right;
+            padding-right: @mainmargin;
+            margin-top: @mainmargin;
+            color: @graycolor;
+            font-size: 12px;
+            .wh{
+                display: inline-block;
+                border-radius: 50%;
+                width: 30rpx;
+                height: 30rpx;
+                line-height: 30rpx;
+                text-align: center;
+                border: 1px solid @graycolor;;
+            }
+        }
+    }
+    .jfsz{
+        clear: both;
+        font-size: 30px;
+        color: #FF7C56;
+        margin-left: 30rpx;
+    }
+}

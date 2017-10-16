@@ -1,0 +1,43 @@
+.hyk {
+  margin: 60rpx auto;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  background: #fff;
+  height: 726rpx;
+  border-radius: 16rpx;
+}
+.hyk .hyk_top {
+  height: 255rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px dashed gray;
+  clear: both;
+}
+.hyk .hyk_top .logo {
+  clear: both;
+  width: 75px;
+  height: 46px;
+  margin: 0px auto;
+  display: block;
+  padding-top: 40rpx;
+}
+.hyk .hyk_top .card {
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 20px;
+}
+.hyk .hyk_mid .ewm {
+  display: block;
+  margin: 60rpx auto;
+  width: 284rpx;
+  height: 284rpx;
+}
+.hyk .hyk_mid .jsjz {
+  text-align: center;
+  margin-top: -45rpx;
+}
+.hyk .hyk_bottom {
+  margin-left: 30rpx;
+  color: #999;
+  margin-right: 30rpx;
+}

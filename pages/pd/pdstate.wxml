@@ -1,0 +1,18 @@
+<view class="container">
+    <!--大的状态模块 start-->
+    <view class="hst">
+        <view class="ndhm">您的号码</view>
+        <view class="ndhk">{{m.cur_queue.num}}</view>'
+    </view>
+    <!--大的状态模块 end-->
+
+    <!--提示信息 start-->
+    <view class="tipbp">您还需要等待{{m.wait_count}}桌，已叫到{{numkk}}号</view>
+    <!--提示信息 end-->
+
+    <!--刷新状态的按钮 start-->
+    <button class="weui-btn" type="primary"style="margin-top: 35px;" bindtap="skipmenu">预约点菜</button>
+    <!-- <button class="weui-btn cebt" type="default">取消排队</button> -->
+    <button class="weui-btn cebt" type="default" bindtap="shuax">刷新状态</button>
+    <!--刷新状态的按钮 end-->
+</view>

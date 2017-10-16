@@ -1,0 +1,26 @@
+<import src="../../template/tecSupport/tecSupport.wxml" />
+<view class="page">
+    <view class="hyk">
+        <!--顶部会员卡 start-->
+        <view class="hyk_top">
+            <image class="logo" src="../../images/logo.png" />
+            <view class="card">微盛卡</view>
+        </view>
+        <!--顶部会员卡 end-->
+
+        <!--中部会员卡 start-->
+        <view class="hyk_mid">
+            <image class="ewm" src="../../images/ewm2.png" />
+            <view class="jsjz">2504000012212122</view>
+        </view>
+        <!--中部会员卡 end-->
+
+        <!--底部会员卡 start-->
+        <navigator url="/pages/menbercar/syxz" class="hyk_bottom weui-cell__ft_in-access">
+            会员卡使用须知
+        </navigator>
+        <!--底部会员卡 end-->
+
+    </view>
+    <template is="footer" data="{{...tecSupport}}" />
+</view>

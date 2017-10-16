@@ -1,0 +1,20 @@
+<import src="../../template/tecSupport/tecSupport.wxml"/>
+<view class="container">
+    
+    <!--预订时间 start-->
+    <view class="weui-cells__title">请选择您预订的时间</view>
+    <view class="weui-cells weui-cells_after-title" bindtap="open">
+        <view class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">
+                <view style="display: inline-block; vertical-align: middle">{{time}}</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+    </view>
+    <!--预订时间 end-->
+
+    <!--下一步按钮 start-->
+    <button class="weui-btn" type="primary" bindtap="nextbp" data-riqi="{{time}}">下一步</button>
+    <!--下一步按钮 end-->
+    <template is="footer" data="{{...tecSupport}}"/>
+</view>

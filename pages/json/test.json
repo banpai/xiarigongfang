@@ -1,0 +1,24 @@
+{
+    "status": 1,
+    "result": {
+        "cost": "50.00",
+        "menu": {
+            "title": null,
+            "thumb": null,
+            "sales": null,
+            "marketprice": null,
+            "price": "25.00",
+            "total": "2"
+        },
+        "order": {
+            "id": "151",
+            "ordersn": "20170823689829008969",
+            "username": "\u89e3\u98de",
+            "totalprice": "50.00",
+            "tel": "13151297760",
+            "givemeal_time": "09:03",
+            "goodsid": "0"
+        }
+    },
+    "message": "success"
+}

@@ -1,0 +1,15 @@
+<import src="../../template/tecSupport/tecSupport.wxml"/>
+<view class="container">
+    <!--预订时间 start-->
+    <view class="weui-cells__title">小桌 起订</view>
+    <view claWss="weui-cells weui-cells_after-title" style="border-top: 1rpx solid #d5d5d5;border-bottom: 1rpx solid #d5d5d5;background: #fff;">
+        <view class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">
+                <view wx:if="{{item.time != undefined}}" style="display: inline-block; vertical-align: middle;color: #999;">没有您符合的时间段</view>
+                <view wx:if="{{item.time}}" class="djsj" bindtap="skipyd" wx:for="{{data.list}}" wx:key="list"  data-timeid="{{item.id}}">{{item.time}}</view>
+            </view>
+        </view>
+    </view>
+    <!--预订时间 end-->
+    <template is="footer" data="{{...tecSupport}}"/>
+</view>
