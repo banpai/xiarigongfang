@@ -1,0 +1,189 @@
+<import src="../../template/tecSupport/tecSupport.wxml" />
+<view class="container">
+  <!--头部名称 start-->
+  <view class="weui-panel weui-panel_access header" style="margin-top: 30rpx;">
+    <view class="weui-panel__bd" hover-class="weui-cell_active">
+      <view class="gh"></view>
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="../../images/top.jpg" style="border-radius: 8rpx;" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">夏日工坊</view>
+          <view class="weui-media-box__desc">
+            <!--评分的星星 start-->
+            <view class="he_xx">
+              <view class="xx_icon" wx:for="{{starlevel}}" wx:key="">
+                <image class="ic" src="../../images/xx.jpg" />
+              </view>
+            </view>
+            <!--评分的星星 end-->
+            <!--多少钱一位 start-->
+            <view class="ds">动漫店哈哈哈哈哈哈</view>
+            <!--多少钱一位 end-->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--头部名称 end-->
+
+  <!--navbar start-->
+  <view class="weui-flex navbar weui-panel bordertb">
+    <navigator url="../../pages/dzp/dzp" class="weui-flex__item nb_li" hover-class="weui-cell_active">
+      <view class="placeholder nb_lid">
+        <view class="nb_icon" style="background: #FFAD12;border-radius: 50%;">
+          <image class="ic" src="../../images/dc2.png" />
+        </view>
+        <view class="nb_text">大转盘</view>
+      </view>
+    </navigator>
+    <navigator url="../../pages/yd/yd" class="weui-flex__item nb_li" hover-class="weui-cell_active">
+      <view class="placeholder nb_lid">
+        <view class="nb_icon" style="background: #3DC09F;border-radius: 50%;">
+          <image class="ic" src="../../images/yd2.png" />
+        </view>
+        <view class="nb_text">开宝箱</view>
+      </view>
+    </navigator>
+    <view bindtap="pdfun" class="weui-flex__item nb_li" hover-class="weui-cell_active">
+      <view class="placeholder nb_lid">
+        <view class="nb_icon" style="background: #2DB6EF;border-radius: 50%;">
+          <image class="ic" src="../../images/pd2.png" />
+        </view>
+        <view class="nb_text">刮刮卡</view>
+      </view>
+    </view>
+    <navigator url="../../pages/dc/dc?flag=1" class="weui-flex__item nb_li" hover-class="weui-cell_active">
+      <view class="placeholder nb_lid">
+        <view class="nb_icon" style="background: #FF5A5A;border-radius: 50%;">
+          <image class="ic" src="../../images/wm3.png" />
+        </view>
+        <view class="nb_text">随机抽奖</view>
+      </view>
+    </navigator>
+  </view>
+  <!--navbar end-->
+
+  <!--加一个图片 start-->
+  <!-- <image class="ic weui-panel bordertb" src="{{info.index_img}}" style="width: 100%;" /> -->
+  <!--加一个图片 end-->
+
+  <!--领取会员卡 start-->
+  <view class="lqhyk weui-panel bordertb">
+    <view class="ceslid">
+      <image class="ic" src="../../images/card.png" style="width: 30rpx;height: 24rpx;" />
+      <text class="wz" bindtap="">领取会员卡</text>
+    </view>
+    <view class="ceslid2">开卡即送测试劵包功能、100积分……</view>
+    <image class="iccc" src="../../images/ljjh.png" />
+    <view class="ljjh" bindtap="ljjh">立即激活</view>
+  </view>
+  <!--领取会员卡 end-->
+
+  <!--免费领券 start-->
+  <view class="mflq weui-panel">
+    <view class="mflqtitle">
+      <text class="quan">券</text>
+      <text class="mflq_text">免费领券</text>
+    </view>
+    <view class="kjgn">
+      <image class="icc" src="../../images/z2.png" style="z-index: 1;" />
+      <view class="left_title">
+        <text class="tit">鲁路修1元优惠券</text>
+      </view>
+      <view class="right_mflq"  bindtap="mflq" style="z-index: 10000000000000000;">
+        <image class="ic" src="../../images/lq.png" style="width: 88rpx;height: 88rpx;margin-top: 26rpx;" />
+        <!-- <text class="tit">免费领取</text> -->
+      </view>
+    </view>
+    <view class="kjgn">
+      <image class="icc" src="../../images/z2.png" />
+      <view class="left_title">
+        <text class="tit">卡卡西礼品卷</text>
+      </view>
+      <view class="right_mflq" bindtap="mflq">
+        <text class="tit">免费领取</text>
+      </view>
+    </view>
+    <view class="kjgn">
+      <image class="icc" src="../../images/z2.png" />
+      <view class="left_title">
+        <text class="tit">卡卡罗特9折券</text>
+      </view>
+      <view class="right_mflq" bindtap="mflq">
+        <text class="tit">免费领取</text>
+      </view>
+    </view>
+  </view>
+  <!--免费领券 end-->
+
+  <!--文本栏 start-->
+  <view class="weui-cells weui-cells_after-title" class="ebl weui-panel bordertb">
+    <view class="weui-cell">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/1.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>夏日工坊</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell" bindtap="seeMap">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/2.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>无锡市南长区南禅寺书城地下一层A12～14
+</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell" bindtap="tapCall">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/3.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>电话：13921539213</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/4.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>营业时间：周一～周五 10点～15点。周六周日 9点～17点
+</view>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/5.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>微信号：ak47kakaxi</view>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="../../images/5.png" class="ic" />
+      </view>
+      <view class="weui-cell__bd">
+        <view>qq号：985945054</view>
+      </view>
+    </view>
+  </view>
+  <!--文本栏 end-->
+
+  <view class="footerb">
+    <template is="footer" data="{{...tecSupport}}" />
+  </view>
+
+  <!--我的按钮 start-->
+  <!-- <navigator url="../../pages/wd/wd" class="my_bt">
+      <image class="ic" src="../../images/user.png" />
+  </navigator> -->
+  <!--我的按钮 end-->
+
+</view>
